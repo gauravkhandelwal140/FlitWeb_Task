@@ -1,0 +1,217 @@
+{
+	"info": {
+		"_postman_id": "15ad206e-a4ad-4bb3-a607-9c266a441c9e",
+		"name": "FlitWeb",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "sign_up",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "mobile",
+							"value": "1234567897",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "Rahul",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/sign_up/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"sign_up",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "validateotp",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "mobile",
+							"value": "1234567897",
+							"type": "text"
+						},
+						{
+							"key": "otp",
+							"value": "1234",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/validateotp/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"validateotp",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "profile",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjM1NzUyNTgzLCJqdGkiOiI2OTZmYWVjM2EzNmU0NjFjODBlYWNkMTk3NThhOWIxZSIsInVzZXJfaWQiOjJ9.XZ4qoSLw5mngmq-ScVlYuimPgHDUdyhOWE06a6Xf5AI",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/profile/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"profile",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "booktrademan",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjM1NzUyNTgzLCJqdGkiOiI2OTZmYWVjM2EzNmU0NjFjODBlYWNkMTk3NThhOWIxZSIsInVzZXJfaWQiOjJ9.XZ4qoSLw5mngmq-ScVlYuimPgHDUdyhOWE06a6Xf5AI",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "trademan",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "date",
+							"value": "2021-10-11",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/booktrademan/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"booktrademan",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Imageupload",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjM1NzUyNTgzLCJqdGkiOiI2OTZmYWVjM2EzNmU0NjFjODBlYWNkMTk3NThhOWIxZSIsInVzZXJfaWQiOjJ9.XZ4qoSLw5mngmq-ScVlYuimPgHDUdyhOWE06a6Xf5AI",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/C:/Users/S K/Desktop/Deloitte/download.png"
+						},
+						{
+							"key": "date",
+							"value": "2021-10-11",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/imageupload/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"imageupload",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
